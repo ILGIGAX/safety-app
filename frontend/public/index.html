@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safety - Registrazione e Accesso</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome per le icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header con Menu -->
+  <header>
+    <div class="logo">SafetyApp</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#register">Registrati</a></li>
+        <li><a href="#login">Accedi</a></li>
+        <li><a href="#recovery">Recupera Password</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sezione Hero -->
+  <section class="hero" id="home">
+    <h1>Benvenuto in SafetyApp</h1>
+    <p>Proteggi te stesso e la tua comunità con soluzioni innovative di sicurezza.</p>
+  </section>
+
+  <!-- Sezione Form (Registrazione, Login e Recupero Password) -->
+  <section id="forms" class="forms-section">
+    <div class="container">
+      <!-- Navigazione a schede per registrazione/login -->
+      <nav class="nav-tabs">
+        <button id="tab-register" class="active">Registrati</button>
+        <button id="tab-login">Accedi</button>
+      </nav>
+
+      <!-- Form di Registrazione -->
+      <div id="form-register" class="form-container">
+        <h2>Registrazione a Safety</h2>
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="firstName">Nome</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Inserisci il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Cognome</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Inserisci il tuo cognome" required>
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" name="email" placeholder="esempio@dominio.com" required>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <div class="password-field">
+              <input type="password" id="signupPassword" name="password" placeholder="Crea una password" required>
+              <span class="toggle-password" data-target="signupPassword"><i class="fas fa-eye"></i></span>
+            </div>
+            <small>
+              La password deve contenere almeno una lettera maiuscola, un numero e un carattere speciale tra: !, £, $, %, &, /, (, =, ?, ^
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="dob">Data di nascita</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Genere</label>
+            <select id="gender" name="gender" required>
+              <option value="">Seleziona</option>
+              <option value="M">Maschio</option>
+              <option value="F">Femmina</option>
+              <option value="O">Altro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="reason">Perché hai installato l'app? (facoltativo)</label>
+            <textarea id="reason" name="reason" rows="3" placeholder="Scrivi qui..."></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <label>
+              <input type="checkbox" name="privacy" required> Accetto la Privacy Policy
+            </label>
+            <label>
+              <input type="checkbox" name="terms" required> Accetto i Termini e Condizioni
+            </label>
+            <label>
+              <input type="checkbox" name="marketing"> Desidero ricevere email su offerte e aggiornamenti
+            </label>
+          </div>
+          <button type="submit" class="btn">Registrati</button>
+        </form>
+      </div>
+
+      <!-- Form di Accesso -->
+      <div id="form-login" class="form-container" style="display:none;">
+        <h2>Accedi a Safety</h2>
+        <form id="signinForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" placeholder="esempio@dominio.com" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <div class="password-field">
+              <input type="password" id="loginPassword" name="password" placeholder="Inserisci la password" required>
+              <span class="toggle-password" data-target="loginPassword"><i class="fas fa-eye"></i></span>
+            </div>
+          </div>
+          <button type="submit" class="btn">Accedi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SafetyApp. Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- Includi il tuo script.js per la logica -->
+  <script src="../script.js"></script>
+</body>
+</html>
+
