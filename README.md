@@ -3,7 +3,7 @@ Safety è un’applicazione che fornisce funzionalità di sicurezza urbana come 
 
 Struttura del progetto
 
-*Frontend*
+FRONTEND
 
 Cartelle principali:
 public/: Contiene i file statici principali, come l’HTML della pagina principale (index.html) e il foglio di stile CSS (style.css), che vengono serviti direttamente al browser.
@@ -17,7 +17,7 @@ script.js:
 Contiene la logica di interazione dell’utente. Si occupa di gestire eventi come la selezione delle schede di registrazione e login, la visualizzazione delle password, e l’invio di dati ai servizi del backend.
 
 
-#Backend
+BACKEND
 
 File principali:
 
@@ -30,7 +30,7 @@ Definisce come creare un’immagine Docker del backend. Imposta l’ambiente Pyt
 Architettura:
 Il backend è basato su FastAPI, un framework Python ad alte prestazioni per la creazione di API. Utilizza la convalida degli input tramite Pydantic e implementa endpoint RESTful per registrazione, login, invio di alert e recupero dati. La comunicazione con il database avviene attraverso asyncpg, che consente query asincrone per ottenere migliori performance.
 
-#Database
+DATABASE
 
 Tabelle principali:
 utenti:
