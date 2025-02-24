@@ -3,7 +3,7 @@ Safety è un’applicazione che fornisce funzionalità di sicurezza urbana come 
 
 Struttura del progetto
 
-#Frontend
+*Frontend*
 
 Cartelle principali:
 public/: Contiene i file statici principali, come l’HTML della pagina principale (index.html) e il foglio di stile CSS (style.css), che vengono serviti direttamente al browser.
